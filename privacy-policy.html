@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumen Mail Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0d12;
+        --panel: rgba(255, 255, 255, 0.06);
+        --panel-border: rgba(255, 255, 255, 0.12);
+        --text: #f5f7fb;
+        --muted: #aab4c3;
+        --accent: #4ea1ff;
+        --accent-soft: rgba(78, 161, 255, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Display", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(78, 161, 255, 0.18), transparent 28%),
+          linear-gradient(180deg, #10141d 0%, var(--bg) 55%);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+
+      header {
+        margin-bottom: 32px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      section {
+        margin-top: 20px;
+        padding: 24px;
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 22px;
+        backdrop-filter: blur(18px);
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.2rem;
+        letter-spacing: -0.02em;
+      }
+
+      p,
+      li {
+        color: #d8dfeb;
+        line-height: 1.65;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: #dcecff;
+        font-size: 0.9rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      @media (min-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      a {
+        color: #8fc0ff;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Lumen Mail Privacy Policy</h1>
+        <p class="subtitle">Developer: WHstellar</p>
+        <div class="pill">Last updated: March 15, 2026</div>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Lumen Mail is a Chrome extension that helps users clean Gmail Promotions and Social messages.
+          This Privacy Policy explains what data the extension processes, how it is used, and what is not
+          collected or shared.
+        </p>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2>What Lumen Mail Processes</h2>
+          <ul>
+            <li>Gmail page content required to identify Promotions and Social message rows.</li>
+            <li>Basic page state required to select messages and trigger Gmail delete actions.</li>
+            <li>User preferences saved through Chrome extension storage, such as delete limit, language, and UI accent settings.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What Lumen Mail Does Not Collect</h2>
+          <ul>
+            <li>No personal data is sent to any developer server.</li>
+            <li>No analytics, advertising trackers, or third-party SDKs are used.</li>
+            <li>No browsing data outside <code>https://mail.google.com/*</code> is accessed.</li>
+            <li>No payment, health, location, or authentication data is collected.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h2>How Data Is Used</h2>
+        <p>
+          Data is processed only to provide the extension’s single purpose: cleaning Gmail Promotions and
+          Social messages at the user’s request. Stored settings are used only to remember the user’s chosen
+          configuration for future runs.
+        </p>
+      </section>
+
+      <section>
+        <h2>Storage and Retention</h2>
+        <p>
+          Lumen Mail uses Chrome extension storage on the user’s device and Chrome account sync storage for
+          lightweight settings. The extension does not maintain its own remote database and does not retain
+          Gmail message content outside the active browser session.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Sharing</h2>
+        <p>
+          Lumen Mail does not sell, transfer, or share user data with third parties, except when required by
+          law. User data is not used for advertising, creditworthiness, lending decisions, or unrelated
+          profiling.
+        </p>
+      </section>
+
+      <section>
+        <h2>Google API Services and Limited Use</h2>
+        <p>
+          If the extension ever uses information received from Google services, it will comply with the
+          <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store Limited Use requirements</a>.
+          The current version operates on the Gmail web interface and does not transmit Gmail content to the developer.
+        </p>
+      </section>
+
+      <section>
+        <h2>User Control</h2>
+        <ul>
+          <li>Users may stop cleanup at any time from the extension popup.</li>
+          <li>Users may change or clear saved settings from the extension options page.</li>
+          <li>Users may disable or remove the extension at any time from Chrome.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions about Lumen Mail, contact the developer through the Chrome Web Store listing
+          or the published support channel for WHstellar.
+        </p>
+      </section>
+
+      <footer>
+        This policy should match the data disclosures and permissions shown in the Chrome Web Store listing
+        for Lumen Mail.
+      </footer>
+    </main>
+  </body>
+</html>
